@@ -1,10 +1,14 @@
 <template>
     <div>
-      IndexView Page22
-      <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </nav>
+      <g-header></g-header>
       <router-view></router-view>
     </div>
 </template>
+<script>
+import GHeader from '../common/GHeader.vue'
+export default {
+  components: {
+    GHeader
+  }
+}
+</script>
